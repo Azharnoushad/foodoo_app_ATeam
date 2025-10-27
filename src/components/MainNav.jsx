@@ -9,7 +9,7 @@ const MainNav = () => {
         <input type="text" placeholder="Enter your search request..." />
       </div>
       <div className="premium_btn_container">
-        <i class="fa-solid fa-arrow-up-wide-short"></i>
+        <i className="fa-solid fa-arrow-up-wide-short"></i>
         <Button title="Go to Premium" />
       </div>
     </div>

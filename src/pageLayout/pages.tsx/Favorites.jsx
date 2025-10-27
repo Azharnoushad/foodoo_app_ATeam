@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Favorites = () => {
   return (
-    <div>Favorites</div>
-  )
-}
+    <div className="wrapper">
+      <h1>Favorites</h1>
+      <img src="./images/steak.png" alt="" />
+    </div>
+  );
+};
 
-export default Favorites
+export default Favorites;
