@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Community = () => {
   return (
-     <div className="wrapper">
+    <div className="wrapper">
       <h1>Community</h1>
-      <img src="./images/salmon.png" alt="" />
+      <img src="./images/salmon.png" alt="" width={300} />
     </div>
-  )
-}
+  );
+};
 
-export default Community
+export default Community;

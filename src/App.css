@@ -167,7 +167,6 @@ li .link {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #db3529;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -179,9 +178,7 @@ li .link {
 
 .user_img img {
   width: 50px;
-  position: absolute;
-  top: 8px;
-  left: -2px;
+  object-fit: cover;
 }
 
 .sidebar_footer .user_img:nth-child(2) {
@@ -192,6 +189,9 @@ li .link {
 .sidebar_footer .user_img:nth-child(2) {
   z-index: 2;
   margin-bottom: 15px;
+}
+.sidebar_footer .user_img:nth-child(3) {
+  background-color: #db3529;
 }
 .user_img i {
   color: #fff;
@@ -313,8 +313,8 @@ li .link {
 .card_wrapper {
   margin: 60px 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 70px;
 }
 .card {
   background-color: #fff;
@@ -370,7 +370,7 @@ li .link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 80px;
+  justify-content: space-evenly;
 }
 
 .meal_cooking_details .details h1 {
