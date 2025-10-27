@@ -7,10 +7,12 @@ import {
   Favorites,
   Recipes,
 } from "./pageLayout/pages.tsx/index";
+import CustomCursor from "./components/CustomCursor ";
 
 const App = () => {
   return (
     <div className="app_wrapper">
+      <CustomCursor/>
       <SideBar />
 
       <Routes>
