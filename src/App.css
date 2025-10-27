@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.app_wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+/*--------------------- sideBar---------------------- */
+.sidebar_wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background-color: #fff;
+  box-shadow: 4px 0 8px -2px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  gap: 20px;
+}
+
+.logo_img {
+  width: 120px;
+}
+
+.profile_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_wrapper {
+  position: relative;
+  background-color: #fb7e71;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.image {
+  position: absolute;
+  width: 130px;
+  bottom: 0;
+  left: -10px;
+  right: 50px;
+  top: 20px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+.description {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+}
+.cart {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+i {
+  color: #db3529;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+li .link {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: gray;
+  transition: all 0.3s ease;
+}
+
+.link i {
+  color: gray;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.link:hover i {
+  color: #db3529;
+}
+.link:hover span {
+  color: black;
+}
+
+.link.active {
+  color: black;
+  transform: scale(1.1);
+}
+
+.link.active i {
+  color: #db3529;
+}
+
+.sidebar_footer {
+  margin: 70px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+}
+.userimg_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #db3529;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user_img img {
+  width: 50px;
+  position: absolute;
+  top: 8px;
+  left: -2px;
+}
+
+.sidebar_footer .user_img:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar_footer .user_img:nth-child(2) {
+  z-index: 2;
+  margin-bottom: 15px;
+}
+.user_img i {
+  color: #fff;
+}
+.sidebar_footer p {
+  padding: 5px 40px;
+}
+/*---------------------sideBar---------------------- */
+
+/*---------------------page layout---------------------- */
+
+.page_layout {
+  background-color: #fdf3f1;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_container i {
+  color: #000;
+  font-size: 20px;
+}
+
+.search_box {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  padding: 20px 20px;
+  gap: 10px;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.search_box input {
+  border: none;
+  outline: none;
+  background-color: #fdf3f1;
+  font-size: 14px;
+}
+.premium_btn_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.btn {
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  background-color: #db3529;
+  font-size: 14px;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------page layout---------------------- */
+
+/*---------------------recipes page---------------------- */
+
+.recipes_wrapper{
+
+}
+.title_container{
+display: flex;
+align-items: center;
+}
+
+.recipes_wrapper .description{
+   flex: 1;
+}
+
+.recipes_wrapper .description h1{
+ font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.recipes_wrapper .description h3{
+  color: gray;
+}
+
+.count_container{
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  
+}
+.count_container hr {      
+  background-color: gray;
+}
+
+.count_container p {
+  color: gray;
+  font-size: 12px;
+}
+.count_container h1{
+ font-family: "Sansita Swashed", system-ui;
+   font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 60px;
+}
+.count_container .count{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+/*---------------------recipes page---------------------- */
+
+
