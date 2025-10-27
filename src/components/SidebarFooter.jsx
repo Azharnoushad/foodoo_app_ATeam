@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const SidebarFooter = () => {
   return (
@@ -14,9 +15,12 @@ const SidebarFooter = () => {
           <i className="fa-solid fa-plus"></i>
         </div>
       </div>
-
+      
       <div className="footer_description">
         <p>Create a team and take part in TV show!</p>
+      </div>
+      <div className="premium_btn_container">
+        <Button title="Go to Premium" />
       </div>
     </div>
   );

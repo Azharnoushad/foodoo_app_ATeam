@@ -465,5 +465,167 @@ li .link {
 button {
   cursor: pointer;
 }
+.close_menu i {
+  color: #000;
+  font-size: 28px;
+}
 
 /*---------------------custom-cursor---------------------- */
+
+/*---------------------media query---------------------- */
+
+@media (max-width: 768px) {
+  .sidebar_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    z-index: 10;
+  }
+  .wrapper {
+    height: 100vh;
+  }
+  .page_layout {
+    margin-left: 0%;
+  }
+  .recipes_wrapper .description h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .title_container img {
+    width: 100px;
+  }
+  .count_container p {
+    color: gray;
+    font-size: 10px;
+  }
+  .count_container h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .search_box {
+    width: 80%;
+  }
+  .premium_btn_container Button {
+    display: none;
+  }
+  .close_menu {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .card .meal_img {
+    width: 80px;
+    height: 80px;
+    top: 0px;
+  }
+  .card .meal_details h2 {
+    font-size: 14px;
+  }
+  .card .meal_details p {
+    font-size: 10px;
+  }
+  .card .details {
+    gap: 15px;
+  }
+  .card .details .detail h1 {
+    font-size: 18px;
+  }
+  .card .details .detail p {
+    font-size: 12px;
+  }
+  .card .details .detail i {
+    font-size: 18px;
+  }
+  .card {
+    gap: 20px;
+  }
+  .meal_details {
+    padding-top: 40px;
+  }
+  .card button {
+    background-color: #db3529;
+    color: #fff;
+  }
+}
+@media (max-width: 640px) {
+  .title_container img {
+    width: 80px;
+  }
+  .count_container p {
+    color: rgb(150, 21, 21);
+    font-size: 8px;
+  }
+  .count_container h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .recipes_wrapper .description h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .recipes_wrapper .description h3 {
+    font-size: 12px;
+  }
+  .count_container {
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar_footer .premium_btn_container {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .close_menu {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .recipes_wrapper .description h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .recipes_wrapper .description h3 {
+    font-size: 8px;
+  }
+  .title_container img {
+    width: 60px;
+  }
+  .count_container p {
+    color: rgb(150, 21, 21);
+    font-size: 6px;
+  }
+  .count_container h1 {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .count_container {
+    gap: 16px;
+  }
+}
+
+/*---------------------media query---------------------- */

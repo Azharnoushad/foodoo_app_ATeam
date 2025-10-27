@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 import MainNav from "../components/MainNav";
 
-const PageLayout = () => {
+const PageLayout = ({ setShowSideNav, showSideNav }) => {
   return (
     <div className="page_layout">
-      <MainNav />
+      <MainNav setShowSideNav={setShowSideNav} showSideNav={showSideNav} />
       <Outlet />
     </div>
   );

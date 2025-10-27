@@ -10,7 +10,7 @@ const Recipes = () => {
     queryFn: getMeals,
   });
 
-  console.log("meals", meals);
+  // console.log("meals", meals);
 
   // idMeal
   // :
@@ -48,7 +48,7 @@ const Recipes = () => {
       {mealsIsLoading ? (
         <div className="loader">
           <h3>Loading...</h3>
-          </div>
+        </div>
       ) : (
         <div className="card_wrapper">
           {meals?.map((meal) => (

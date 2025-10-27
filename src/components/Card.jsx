@@ -24,18 +24,18 @@ const Card = ({ strMealThumb, strMeal }) => {
           </div>
 
           <div className="detail incrident">
-            <i class="fa-solid fa-fish"></i>
+            <i className="fa-solid fa-fish"></i>
             <p>Fish</p>
           </div>
         </div>
       </div>
 
       <div className="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
       </div>
 
       <button className="card_button">Start Cooking</button>
